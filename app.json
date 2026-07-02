@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Reality Checker AI",
+    "slug": "reality-checker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "reality-checker",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#070C1A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.realitycheckerai.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Reality Checker needs access to your photos to analyze images for authenticity.",
+        "NSCameraUsageDescription": "Reality Checker needs access to your camera to capture images for analysis."
+      }
+    },
+    "android": {
+      "package": "com.realitycheckerai.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#070C1A"
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-image-picker"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    }
+  }
+}
